@@ -18,12 +18,17 @@ const projectListData = [
     summary:
       "Set primary color, toggle complementaries, add secondary, add saturation variations",
     detail: ""
+  },
+  {
+    title: "Weather via API",
+    summary: "Pull and display data from a weather API",
+    detail: "Bonus: allow users to enter a new zip code to change the city"
   }
   // {
   //   title: "",
   //   summary: "",
   //   detail: ""
-  // }
+  // },
 ];
 
 export default function Projects() {
