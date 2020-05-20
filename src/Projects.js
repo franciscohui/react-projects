@@ -1,30 +1,45 @@
 import React from "react";
 import "./styles.css";
 
-const SingleProject = myProps => (
-  <div className="SingleProject">
-    <div className="ProjectTitle">{myProps.title}</div>
-    <div className="ProjectSummary">{myProps.summary}</div>
-    <div className="ProjectDetail">{myProps.detail}</div>
-  </div>
-);
+const projectListData = [
+  {
+    title: "Project List",
+    summary: "A list of projects with titles, summaries, and a done state.",
+    detail:
+      "Bonus: Populate projects via Google Sheets or AirTable. Commit to Github. Deploy site via Netlify. Populate via JSON"
+  },
+  {
+    title: "Timer",
+    summary: "Start, stop; pause, resume, and set time",
+    detail: ""
+  },
+  {
+    title: "Color Picker",
+    summary:
+      "Set primary color, toggle complementaries, add secondary, add saturation variations",
+    detail: ""
+  }
+  // {
+  //   title: "",
+  //   summary: "",
+  //   detail: ""
+  // }
+];
 
 export default function Projects() {
-  return (
-    <div className="ProjectList">
-      <SingleProject
-        title="Project List"
-        summary="A list of projects with titles, summaries, and a done state."
-        detail="Bonus: Populate projects via Google Sheets or AirTable. Commit to Github. Deploy site via Netlify."
-      />
-      <SingleProject
-        title="Timer"
-        summary="Start, stop; pause, resume, and set time"
-      />
-      <SingleProject
-        title="Color Picker"
-        summary="Set primary color, toggle complementaries, add secondary, add saturation variations"
-      />
-    </div>
-  );
+  return <ProjectList projectData={projectListData} />;
 }
+
+const ProjectList = myProps => {
+  const rows = myProps.projectData.map((row, index) => {
+    return (
+      <div className="SingleProject" key={index}>
+        <div className="ProjectTitle">{row.title}</div>
+        <div className="ProjectSummary">{row.summary}</div>
+        <div className="ProjectDetail">{row.detail}</div>
+      </div>
+    );
+  });
+
+  return <div>{rows}</div>;
+};
