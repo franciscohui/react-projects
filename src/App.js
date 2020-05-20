@@ -11,26 +11,3 @@ export default function App() {
     </div>
   );
 }
-
-/*
-Simple react apps
-
-Component List of project ideas
-> manually create the list
-> pull in from an open API (google sheets JSON)
-
-Timer app
-Start timer
-When it stops, open a page
-Pause and resume timer
-
-Timer app stories: 
-- Render time
-- Update time
-- 
-
-
-
-
-
-*/
