@@ -15,7 +15,7 @@ export default function Projects() {
       <SingleProject
         title="Project List"
         summary="A list of projects with titles, summaries, and a done state."
-        detail="Bonus: Populate projects via Google Sheets or AirTable. Initial commit to github"
+        detail="Bonus: Populate projects via Google Sheets or AirTable. second commit"
       />
       <SingleProject
         title="Timer"
