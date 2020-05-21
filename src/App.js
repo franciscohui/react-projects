@@ -1,5 +1,6 @@
 import React from "react";
 import Projects from "./Projects";
+import JsonAPI from "./jsonapi";
 import "./styles.css";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
       <h1>React Project Ideas</h1>
       <p>A list of projects I'd like to build in React</p>
       <Projects />
+      <JsonAPI />
     </div>
   );
 }
