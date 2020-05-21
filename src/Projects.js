@@ -3,10 +3,16 @@ import "./styles.css";
 
 const projectListData = [
   {
-    title: "Project List",
-    summary: "A list of projects with titles, summaries, and a done state.",
+    title: "Project List 1.0",
+    summary:
+      "A static list of projects with titles, summaries, and a done state.",
+    detail: "Commit to Github. Deploy site via Netlify. Populate via JSON"
+  },
+  {
+    title: "Project List 1.1",
+    summary: "Make it dynamic and interactive",
     detail:
-      "Bonus: Populate projects via Google Sheets or AirTable. Commit to Github. Deploy site via Netlify. Populate via JSON"
+      "Populate projects via Google Sheets or AirTable. Mark items as done. Add sorting and filtering."
   },
   {
     title: "Timer",
@@ -23,12 +29,12 @@ const projectListData = [
     title: "Weather via API",
     summary: "Pull and display data from a weather API",
     detail: "Bonus: allow users to enter a new zip code to change the city"
+  },
+  {
+    title: "Set up local dev environment",
+    summary: "Build React apps locally",
+    detail: ""
   }
-  // {
-  //   title: "",
-  //   summary: "",
-  //   detail: ""
-  // },
 ];
 
 export default function Projects() {
