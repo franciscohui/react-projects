@@ -34,6 +34,12 @@ const projectListData = [
     title: "Set up local dev environment",
     summary: "Build React apps locally",
     detail: ""
+  },
+  {
+    title: "Framer code components",
+    summary:
+      "Prototype with code components. See how design and code components complement each other",
+    detail: ""
   }
 ];
 
