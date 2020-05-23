@@ -28,7 +28,8 @@ const projectListData = [
   {
     title: "Weather via API",
     summary: "Pull and display data from a weather API",
-    detail: "Bonus: allow users to enter a new zip code to change the city"
+    detail: "Bonus: allow users to enter a new zip code to change the city",
+    url: "https://csb-gngqm.netlify.app"
   },
   {
     title: "Set up local dev environment",
@@ -54,6 +55,9 @@ const ProjectList = myProps => {
         <div className="ProjectTitle">{row.title}</div>
         <div className="ProjectSummary">{row.summary}</div>
         <div className="ProjectDetail">{row.detail}</div>
+        <div>
+          <a href={row.url}>{row.url}</a>
+        </div>
       </div>
     );
   });
